@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <script type="text/javascript" language="javascript">
+     javascript: window.history.forward(1);
+     
+    </script>
+    <link href="menu_assets/styles.css" rel="stylesheet" type="text/css" />
+    <link href="default.css" rel="stylesheet" type="text/css" />
+        <title>Blood Bank</title>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 809px;
+            height: 572px;
+        }
+        .style2
+        {
+            height: 101px;
+        }
+        .style3
+        {
+            height: 56px;
+        }
+        .style4
+        {
+            width: 798px;
+            text-align: left;
+        }
+        .style5
+        {
+            width: 803px;
+            height: 105px;
+        }
+        .style6
+        {
+            width: 139px;
+        }
+        .style10
+        {
+            height: 17px;
+        }
+        .style11
+        {
+            height: 17px;
+            width: 66px;
+        }
+        .style12
+        {
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: Aharoni;
+            color: #BD2323;
+        }
+        .style13
+        {
+            height: 17px;
+            width: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    
+    <div style="text-align: center; width: auto; height: auto;" align="center">
+        
+        <table class="style1">
+            <tr>
+                <td colspan="2" class="style2" align="left" 
+                   
+                    valign="top">
+                    <table align="center" class="style5">
+                        <tr>
+                            <td class="style6" rowspan="2">
+                                <asp:Image ID="Image1" runat="server" Height="116px" 
+                                    ImageUrl="~/imagesfolder/home1.jpg" Width="141px" />
+                            </td>
+                            <td class="style11">
+                                </td>
+                            <td class="style13">
+                                </td>
+                            <td align="center" class="style10">
+                                
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Tips.aspx">Blood Tips</asp:HyperLink>
+                                
+&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx">About Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/adminlog.aspx">Admin Login</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="style12" colspan="3" valign="middle">
+                                Online Blood bank</td>
+                        </tr>
+                    </table>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="style3">
+                    <div id="cssmenu">
+                        <ul>
+                            <li class="active "><a href="Home.aspx"><span>Home</span></a></li>
+                            <li><a href="Search.aspx"><span>Search Donor</span></a></li>
+                            <li><a href="request.aspx"><span>Request Blood</span></a></li>
+                            <li><a href="login.aspx"><span>Donor Login</span></a></li>
+                            </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4" valign="top">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>&nbsp;</td>
+                
+            </tr>
+            </table>
+        
+    </div>
+   
+    </form>
+   
+</body>
+</html>
